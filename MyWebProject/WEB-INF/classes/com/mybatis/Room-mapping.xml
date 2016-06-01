@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="roomInfo">
+<resultMap type="roomInfo" id="roomInfoMap">
+	<result property="roomcode" column="ROOMCODE"/>
+	<result property="area" column="AREA"/>
+	<result property="accommodate_person" column="ACCOMMODATE_PERSON"/>
+	<result property="explaination" column="EXPLAINATION"/>
+</resultMap>
+	
+<select id="getRoomInfo" resultMap="roomInfoMap" parameterType="String">
+	select * from RoomInfo where roomcode like #{location}
+</select>
+
+</mapper>

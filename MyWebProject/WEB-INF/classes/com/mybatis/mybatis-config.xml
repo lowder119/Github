@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias alias="studentInfo" type="com.entity.StudentInfo"/> <!-- User엔티티의 별칭을 설정해서 Mapper 에 설정된 xml 에 별칭을 사용하겠다 -->
+		<typeAlias alias="NotifyInfo" type="com.entity.NotifyInfo"/>
+		<typeAlias alias="roomInfo" type="com.entity.RoomInfo"/>
+		<typeAlias alias="rentalRoom" type="com.entity.RentalRoom"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="com/mybatis/student-mapping.xml"/>
+		<mapper resource="com/mybatis/notify-mapping.xml"/>
+		<mapper resource="com/mybatis/Room-mapping.xml"/>
+		<mapper resource="com/mybatis/Rental-mapping.xml"/>
+	</mappers>
+</configuration>

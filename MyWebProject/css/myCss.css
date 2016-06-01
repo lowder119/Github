@@ -1,0 +1,30 @@
+.wrap{
+	width: 100%;
+	margin: 0,auto;
+	overflow: hidden;
+}
+.main_left{
+	width: 70%;
+	height: 300px;
+	float: left; 
+	background-image: url("../img/log(1).PNG");
+	background-size: 100% 100%;
+}
+.main_right{
+	width: 30%;
+	float: left;
+}
+.main_bottom{
+    margin: 20px auto;
+ 	width: 100%;
+	height: 150px; 
+	background-color: #B0B0B0;
+}
+
+ div>img{
+	margin-top : 10px;
+	width: 100%;
+} 
+.log_border{
+	border-color: #ED0000;
+}

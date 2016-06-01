@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rentalRoom">
+<resultMap type="rentalRoom" id="rentalRoomMap">
+	<result property="rental_time" column="RENTAL_TIME"/>
+	<result property="studentcode" column="STUDENTCODE"/>
+	<result property="roomcode" column="ROOMCODE"/>
+</resultMap>
+
+<select id="getRentalRoomInfo" resultMap="rentalRoomMap" parameterType="String">
+select rental_time,studentcode,roomcode from rentalroom where rental_date = to_date(#{rentalDate},'MM/DD/YYYY')
+</select>
+
+</mapper>

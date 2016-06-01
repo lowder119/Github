@@ -1,0 +1,72 @@
+.content{
+	width: 800px;
+	height: auto; /* 500px */
+	margin: 10px auto;
+	overflow: hidden;
+}
+.left_content{
+	width: 150px;
+	height: 300px;
+	float: left;
+}
+.left_content1{
+	width: 150px;
+	height: 150px;
+	background-color: #B70000;
+}
+.left_content1 h3,.left_content1 h6{
+	color: white;
+	text-align: center;
+}
+.left_content1 h3{
+	line-height: 50px;
+}
+.left_content2{
+	width: 150px;
+	height: 100px;
+	margin: 10px auto;
+}
+.left_content2 ul li{
+	margin-top: 10px;
+}
+.main_content{
+	width: 600px;
+	height: auto; /* 500px */
+	margin: 0 20px;
+	float: left;
+}
+.main_content1{
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+}
+.main_content2{
+	height: 40px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+.main_no{
+	width: 40px;
+	float: left;
+	text-align: center;
+}
+.main_title{
+	width: 350px;
+	float: left;
+	text-align: center;
+}
+.main_rigDate{
+	width: 80px;
+	float: left;
+	text-align: center;
+}
+.main_writer{
+	width: 60px;
+	float: left;
+	text-align: center;
+}
+.main_count{
+	width: 50px;
+	float: left;
+	text-align: center;
+}

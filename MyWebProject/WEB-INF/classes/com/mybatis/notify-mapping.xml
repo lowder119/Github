@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="notifyInfo">
+	<resultMap type="NotifyInfo" id="notifyinfo">
+		<result property="writing_number" column="WRITING_NUMBER"/>
+		<result property="title" column="TITLE"/>
+		<result property="regDate" column="REGDATE"/>
+		<result property="writer" column="WRITER"/>
+	</resultMap>
+	
+
+	<select id="getNotifyList" resultMap="notifyinfo">
+	select writing_number, title, to_char(regdate,'YY/DD/MM') as regdate,
+	writer from notifyinfo
+	</select>
+</mapper>
